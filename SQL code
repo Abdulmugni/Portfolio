@@ -1,0 +1,158 @@
+/******** DMA Schema Migration Deployment Script      Script Date: 17-09-2021 02:32:33 AM ********/
+
+/****** Object:  Table [dbo].['2018$']    Script Date: 17-09-2021 02:32:33 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[''2018$'']') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].['2018$'](
+	[hotel] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[is_canceled] [float] NULL,
+	[lead_time] [float] NULL,
+	[arrival_date_year] [float] NULL,
+	[arrival_date_month] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[arrival_date_week_number] [float] NULL,
+	[arrival_date_day_of_month] [float] NULL,
+	[stays_in_weekend_nights] [float] NULL,
+	[stays_in_week_nights] [float] NULL,
+	[adults] [float] NULL,
+	[children] [float] NULL,
+	[babies] [float] NULL,
+	[meal] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[country] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[market_segment] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[distribution_channel] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[is_repeated_guest] [float] NULL,
+	[previous_cancellations] [float] NULL,
+	[previous_bookings_not_canceled] [float] NULL,
+	[reserved_room_type] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[assigned_room_type] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[booking_changes] [float] NULL,
+	[deposit_type] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[agent] [float] NULL,
+	[company] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[days_in_waiting_list] [float] NULL,
+	[customer_type] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[adr] [float] NULL,
+	[required_car_parking_spaces] [float] NULL,
+	[total_of_special_requests] [float] NULL,
+	[reservation_status] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[reservation_status_date] [datetime] NULL
+)
+END
+GO
+/****** Object:  Table [dbo].['2019$']    Script Date: 17-09-2021 02:32:33 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[''2019$'']') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].['2019$'](
+	[hotel] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[is_canceled] [float] NULL,
+	[lead_time] [float] NULL,
+	[arrival_date_year] [float] NULL,
+	[arrival_date_month] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[arrival_date_week_number] [float] NULL,
+	[arrival_date_day_of_month] [float] NULL,
+	[stays_in_weekend_nights] [float] NULL,
+	[stays_in_week_nights] [float] NULL,
+	[adults] [float] NULL,
+	[children] [float] NULL,
+	[babies] [float] NULL,
+	[meal] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[country] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[market_segment] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[distribution_channel] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[is_repeated_guest] [float] NULL,
+	[previous_cancellations] [float] NULL,
+	[previous_bookings_not_canceled] [float] NULL,
+	[reserved_room_type] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[assigned_room_type] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[booking_changes] [float] NULL,
+	[deposit_type] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[agent] [float] NULL,
+	[company] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[days_in_waiting_list] [float] NULL,
+	[customer_type] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[adr] [float] NULL,
+	[required_car_parking_spaces] [float] NULL,
+	[total_of_special_requests] [float] NULL,
+	[reservation_status] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[reservation_status_date] [datetime] NULL
+)
+END
+GO
+/****** Object:  Table [dbo].['2020$']    Script Date: 17-09-2021 02:32:33 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[''2020$'']') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].['2020$'](
+	[hotel] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[is_canceled] [float] NULL,
+	[lead_time] [float] NULL,
+	[arrival_date_year] [float] NULL,
+	[arrival_date_month] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[arrival_date_week_number] [float] NULL,
+	[arrival_date_day_of_month] [float] NULL,
+	[stays_in_weekend_nights] [float] NULL,
+	[stays_in_week_nights] [float] NULL,
+	[adults] [float] NULL,
+	[children] [float] NULL,
+	[babies] [float] NULL,
+	[meal] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[country] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[market_segment] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[distribution_channel] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[is_repeated_guest] [float] NULL,
+	[previous_cancellations] [float] NULL,
+	[previous_bookings_not_canceled] [float] NULL,
+	[reserved_room_type] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[assigned_room_type] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[booking_changes] [float] NULL,
+	[deposit_type] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[agent] [float] NULL,
+	[company] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[days_in_waiting_list] [float] NULL,
+	[customer_type] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[adr] [float] NULL,
+	[required_car_parking_spaces] [float] NULL,
+	[total_of_special_requests] [float] NULL,
+	[reservation_status] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[reservation_status_date] [datetime] NULL
+)
+END
+GO
+/****** Object:  Table [dbo].[market_segment$]    Script Date: 17-09-2021 02:32:33 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[market_segment$]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[market_segment$](
+	[Discount] [float] NULL,
+	[market_segment] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+END
+GO
+/****** Object:  Table [dbo].[meal_cost$]    Script Date: 17-09-2021 02:32:33 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[meal_cost$]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[meal_cost$](
+	[Cost] [float] NULL,
+	[meal] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+END
+GO
+
